@@ -22,6 +22,11 @@ The following features were developed for **Activity A1 (EX1)**:
 
 * **6. Report (2.0 pts):** Elaboration of a report in PDF format, justifying the data structures selected for each exercise.
 
+## Team
+
+* Arthur Gislon Leonida
+* Matheus Barbieri Munzi
+
 ## Repository Structure
 
 ```GRAFOS/
@@ -33,9 +38,4 @@ The following features were developed for **Activity A1 (EX1)**:
 │   ├── A1_5.py
 │   └── graph_utils.py
 ├── README.md
-└── sample_graph.txt```
-
-## Team
-
-* Arthur Gislon Leonida
-* Matheus Barbieri Munzi
+└── sample_graph.txt
