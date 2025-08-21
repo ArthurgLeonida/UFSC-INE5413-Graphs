@@ -1,7 +1,7 @@
 from graph_utils import Graph
 from collections import deque, defaultdict
 
-graph_file = 'EX1\sample_graph.txt'
+graph_file = 'sample_graph.txt'
 
 graph = Graph()
 graph.ler(graph_file)
