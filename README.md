@@ -24,16 +24,16 @@ The following features were developed for **Activity A1 (EX1)**:
 
 ## Repository Structure
 
-```GRAFOS/```
-```├── EX1/```
-```│   ├── pycache/```
-```│   ├── A1_2.py```
-```│   ├── A1_3.py```
-```│   ├── A1_4.py```
-```│   ├── A1_5.py```
-```│   └── graph_utils.py```
-```├── README.md```
-```└── sample_graph.txt```
+```GRAFOS/
+├── EX1/
+│   ├── pycache/
+│   ├── A1_2.py
+│   ├── A1_3.py
+│   ├── A1_4.py
+│   ├── A1_5.py
+│   └── graph_utils.py
+├── README.md
+└── sample_graph.txt```
 
 ## Team
 
