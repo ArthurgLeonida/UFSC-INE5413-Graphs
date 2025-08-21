@@ -8,7 +8,7 @@ The project aims to create a graph library and implement fundamental algorithms 
 
 ## Implemented Features
 
-The following features were developed for **Activity A1**:
+The following features were developed for **Activity A1 (EX1)**:
 
 * **1. Representation (2.0 pts):** A class to represent an un-directed, weighted graph, with methods for essential operations such as counting vertices and edges, a vertex's degree, and checking for edges.
 
