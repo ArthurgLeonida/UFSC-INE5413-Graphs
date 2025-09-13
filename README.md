@@ -39,4 +39,3 @@ The following features were developed for **Activity A1 (EX1)**:
 │   └── graph_utils.py
     └── .net files for testing
 ├── README.md
-└── sample_graph.txt
