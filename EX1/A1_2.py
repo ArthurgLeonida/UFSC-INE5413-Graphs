@@ -1,12 +1,6 @@
 from graph_utils import Graph
 from collections import deque, defaultdict
-
-graph_file = 'sample_graph.txt'
-
-graph = Graph()
-graph.ler(graph_file)
-
-#print(graph.vertices)
+import sys
 
 def bfs(graph: Graph, start):
     """Perform BFS and return vertices organized by levels"""
@@ -32,10 +26,21 @@ def bfs(graph: Graph, start):
 
     return levels
 
-levels = bfs(graph=graph, start=2)  
+def main():
+    file_path = sys.argv[1]
+    start_vertex = int(sys.argv[2])
 
-# Print results
-for level in sorted(levels.keys()):
-    vertices_str = ','.join(map(str, sorted(levels[level])))
-    print(f"{level}: {vertices_str}")
+    g = Graph()
+    g.ler(file_path)
 
+    levels = bfs(graph=g, start=start_vertex)  
+    for level in sorted(levels.keys()):
+        vertices_str = ','.join(map(str, sorted(levels[level])))
+        print(f"{level}: {vertices_str}")
+
+if __name__ == "__main__":
+    main()
+    # COMANDO PARA TESTAR: python EX1/A1_2.py EX1/sample_graph.net 1
+    # COMANDO PARA TESTAR: python EX1/A1_2.py EX1/ContemCicloEuleriano.net 1
+    # COMANDO PARA TESTAR: python EX1/A1_2.py EX1/ContemCicloEuleriano2.net 1
+    # COMANDO PARA TESTAR: python EX1/A1_2.py EX1/SemCicloEuleriano.net 1
