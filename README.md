@@ -47,5 +47,12 @@ The following features were developed for **Activity A2 (EX2)**:
 │   ├── A1_4.py
 │   ├── A1_5.py
 │   └── graph_utils.py
-    └── .net files for testing
+│   └── .net files for testing
+├── EX2/
+│   ├── pycache/
+│   ├── A2_1.py
+│   ├── A2_2.py
+│   ├── A2_3.py
+│   └── graph_utils.py
+│   └── .net files for testing
 ├── README.md
