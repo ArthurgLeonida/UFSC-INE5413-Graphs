@@ -15,7 +15,9 @@ def DFS_OT(G):
     for u in sorted(G.get_all_vertices()):
         if not C[u]:
             DFS_Visit_OT(G, u, C, O)
-            
+    
+    # Reverse para obter a ordem topológica correta
+    O.reverse()
     return O
 
 def DFS_Visit_OT(G, v, C, O):
@@ -30,8 +32,8 @@ def DFS_Visit_OT(G, v, C, O):
         if C[u] == False:
             DFS_Visit_OT(G, u, C, O)
 
-    # Adiciona o vértice v no início da lista O
-    O.insert(0, v)
+    # Adiciona o vértice v no final da lista (será revertida depois)
+    O.append(v)
 
 def main():
     if len(sys.argv) < 2:
