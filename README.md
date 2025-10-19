@@ -28,7 +28,7 @@ The following features were developed for **Activity A2 (EX2)**:
 
 * **2. Topological Sorting (2.0 pts):** Implementation of a depth-first search (DFS) based algorithm for topological sorting of directed acyclic graphs (DAGs).
 
-* **3. Minimum Spanning Tree (2.0 pts):** Implementation of Kruskal's algorithm to find the minimum spanning tree in undirected weighted graphs.
+* **3. Minimum Spanning Tree (2.0 pts):** Implementation of Kruskal's algorithm using Union-Find to find the minimum spanning tree in undirected weighted graphs.
 
 * **4. Report (2.0 pts):** Elaboration of a report in PDF format, justifying the data structures selected for each exercise.
 

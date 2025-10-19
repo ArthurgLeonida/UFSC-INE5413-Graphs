@@ -72,7 +72,6 @@ class DirectedGraph:
         """Helper method to get all vertex indices"""
         return list(self.vertices.keys())
 
-
 class UndirectedGraph:
     """Class to represent an undirected weighted graph (for MST algorithms)"""
     def __init__(self):
@@ -155,3 +154,57 @@ class UndirectedGraph:
     def get_all_vertices(self):
         """Helper method to get all vertex indices"""
         return list(self.vertices.keys())
+
+class UnionFind:
+    """
+    Implementation of the Union-Find (Disjoint Set Union - DSU) data structure
+    with Path Compression and Union by Rank optimizations.
+    """
+
+    def __init__(self, elementos):
+        """
+        Constructor: Initializes the Union-Find with the given elements.
+        """
+        # Dictionary that maps each element to its parent.
+        # Initially, each element is its own parent (root of its own tree).
+        self.parent = {elem: elem for elem in elementos}
+
+        # Dictionary that maps each element to its rank.
+        # Initially, all elements have rank 0.
+        self.rank = {elem: 0 for elem in elementos}
+
+    def encontra(self, elemento):
+        """
+        Find with Path Compression: finds the root of the set containing 'elemento'.
+        """
+        # If the element is not the root of its tree (its parent is not itself)
+        if self.parent[elemento] != elemento:
+            # Recursively find the root and compress the path
+            self.parent[elemento] = self.encontra(self.parent[elemento])
+        
+        return self.parent[elemento]
+
+    def uniao(self, elemento1, elemento2):
+        """
+        Union by Rank: unites the sets containing 'elemento1' and 'elemento2'.
+        Returns True if a union was performed, False if they were already in the same set.
+        """
+        # Find the roots of the two sets.
+        raiz1 = self.encontra(elemento1)
+        raiz2 = self.encontra(elemento2)
+
+        # if both elements have the same root, they are already in the same set.
+        if raiz1 == raiz2:
+            return False
+
+        # Union by Rank: attaches the tree of lower rank to the tree of higher rank.
+        if self.rank[raiz1] > self.rank[raiz2]:
+            self.parent[raiz2] = raiz1
+        elif self.rank[raiz2] > self.rank[raiz1]:
+            self.parent[raiz1] = raiz2
+        else:
+            # If ranks are equal, make one root the parent of the other and increase its rank.
+            self.parent[raiz2] = raiz1
+            self.rank[raiz1] += 1
+        
+        return True
