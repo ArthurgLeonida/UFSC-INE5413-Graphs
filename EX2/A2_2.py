@@ -21,7 +21,7 @@ def DFS_OT(G):
 def DFS_Visit_OT(G, v, C, O):
     """
     Input: um grafo G = (V, E), um vértice v ∈ V,
-           dicionário C (Visitado), lista O (ordem topológica)
+    dicionário C (Visitado), lista O (ordem topológica)
     """
     C[v] = True
     

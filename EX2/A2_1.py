@@ -132,7 +132,7 @@ def main():
     
     # Imprime as SCCs
     for scc in sccs:
-        print('{' + ','.join(map(str, scc)) + '}')
+        print(','.join(map(str, scc)))
 
 
 if __name__ == "__main__":
