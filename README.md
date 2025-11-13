@@ -32,6 +32,16 @@ The following features were developed for **Activity A2 (EX2)**:
 
 * **4. Report (2.0 pts):** Elaboration of a report in PDF format, justifying the data structures selected for each exercise.
 
+The following features were developed for **Activity A3 (EX3)**:
+
+* **1. Edmonds-Karp (2.5 pts):** Implementation of the Edmonds-Karp algorithm for finding maximum flow in directed weighted graphs using BFS to find augmenting paths.
+
+* **2. Hopcroft-Karp (2.5 pts):** Implementation of the Hopcroft-Karp algorithm for finding maximum matching in bipartite graphs with automatic bipartition detection.
+
+* **3. Vertex Coloring (2.5 pts):** Implementation of a greedy vertex coloring algorithm based on Lawler's approach, using degree-based heuristics to minimize the number of colors.
+
+* **4. Report (2.5 pts):** Elaboration of a report in PDF format, justifying the data structures selected for each exercise.
+
 ## Team
 
 * Arthur Gislon Leonida
@@ -55,6 +65,14 @@ The following features were developed for **Activity A2 (EX2)**:
 │   ├── A2_3.py
 │   ├── graph_utils.py
 │   └── .net files for testing
+├── EX3/
+│   ├── pycache/
+│   ├── A3_1.py
+│   ├── A3_2.py
+│   ├── A3_3.py
+│   ├── graph_utils.py
+│   └── .net files for testing
 ├── AtividadeA1.pdf
 ├── AtividadeA2.pdf
+├── AtividadeA3.pdf
 └── README.md
